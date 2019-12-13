@@ -1,0 +1,37 @@
+# Project: 项目2
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = "C:/Users/pc/Downloads/(1)\ Matrix\ 作业\ -\ 软工16级2班\ 程序设计（II）/2391\ Simple\ Markup\ Language\ Parser/Provided\ Codes/Bulider.o" "C:/Users/pc/Downloads/(1)\ Matrix\ 作业\ -\ 软工16级2班\ 程序设计（II）/2391\ Simple\ Markup\ Language\ Parser/Provided\ Codes/main.o" "C:/Users/pc/Downloads/(1)\ Matrix\ 作业\ -\ 软工16级2班\ 程序设计（II）/2391\ Simple\ Markup\ Language\ Parser/Provided\ Codes/Parser.o" "C:/Users/pc/Downloads/(1)\ Matrix\ 作业\ -\ 软工16级2班\ 程序设计（II）/2391\ Simple\ Markup\ Language\ Parser/Provided\ Codes/State.o"
+LINKOBJ  = "C:/Users/pc/Downloads/(1) Matrix 作业 - 软工16级2班 程序设计（II）/2391 Simple Markup Language Parser/Provided Codes/Bulider.o" "C:/Users/pc/Downloads/(1) Matrix 作业 - 软工16级2班 程序设计（II）/2391 Simple Markup Language Parser/Provided Codes/main.o" "C:/Users/pc/Downloads/(1) Matrix 作业 - 软工16级2班 程序设计（II）/2391 Simple Markup Language Parser/Provided Codes/Parser.o" "C:/Users/pc/Downloads/(1) Matrix 作业 - 软工16级2班 程序设计（II）/2391 Simple Markup Language Parser/Provided Codes/State.o"
+LIBS     = -static-libgcc -m32 -pg
+INCS     = -I"C:/Dev-Cpp/MinGW64/include" -I"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Dev-Cpp/MinGW64/include" -I"C:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = 项目2.exe
+CXXFLAGS = $(CXXINCS) -m32 -pg
+CFLAGS   = $(INCS) -m32 -pg
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+"C:/Users/pc/Downloads/(1)\ Matrix\ 作业\ -\ 软工16级2班\ 程序设计（II）/2391\ Simple\ Markup\ Language\ Parser/Provided\ Codes/Bulider.o": C:/Users/pc/Downloads/(1)\ Matrix\ 作业\ -\ 软工16级2班\ 程序设计（II）/2391\ Simple\ Markup\ Language\ Parser/Provided\ Codes/Bulider.cpp
+	$(CPP) -c "C:/Users/pc/Downloads/(1) Matrix 作业 - 软工16级2班 程序设计（II）/2391 Simple Markup Language Parser/Provided Codes/Bulider.cpp" -o "C:/Users/pc/Downloads/(1) Matrix 作业 - 软工16级2班 程序设计（II）/2391 Simple Markup Language Parser/Provided Codes/Bulider.o" $(CXXFLAGS)
+
+"C:/Users/pc/Downloads/(1)\ Matrix\ 作业\ -\ 软工16级2班\ 程序设计（II）/2391\ Simple\ Markup\ Language\ Parser/Provided\ Codes/main.o": C:/Users/pc/Downloads/(1)\ Matrix\ 作业\ -\ 软工16级2班\ 程序设计（II）/2391\ Simple\ Markup\ Language\ Parser/Provided\ Codes/main.cpp
+	$(CPP) -c "C:/Users/pc/Downloads/(1) Matrix 作业 - 软工16级2班 程序设计（II）/2391 Simple Markup Language Parser/Provided Codes/main.cpp" -o "C:/Users/pc/Downloads/(1) Matrix 作业 - 软工16级2班 程序设计（II）/2391 Simple Markup Language Parser/Provided Codes/main.o" $(CXXFLAGS)
+
+"C:/Users/pc/Downloads/(1)\ Matrix\ 作业\ -\ 软工16级2班\ 程序设计（II）/2391\ Simple\ Markup\ Language\ Parser/Provided\ Codes/Parser.o": C:/Users/pc/Downloads/(1)\ Matrix\ 作业\ -\ 软工16级2班\ 程序设计（II）/2391\ Simple\ Markup\ Language\ Parser/Provided\ Codes/Parser.cpp
+	$(CPP) -c "C:/Users/pc/Downloads/(1) Matrix 作业 - 软工16级2班 程序设计（II）/2391 Simple Markup Language Parser/Provided Codes/Parser.cpp" -o "C:/Users/pc/Downloads/(1) Matrix 作业 - 软工16级2班 程序设计（II）/2391 Simple Markup Language Parser/Provided Codes/Parser.o" $(CXXFLAGS)
+
+"C:/Users/pc/Downloads/(1)\ Matrix\ 作业\ -\ 软工16级2班\ 程序设计（II）/2391\ Simple\ Markup\ Language\ Parser/Provided\ Codes/State.o": C:/Users/pc/Downloads/(1)\ Matrix\ 作业\ -\ 软工16级2班\ 程序设计（II）/2391\ Simple\ Markup\ Language\ Parser/Provided\ Codes/State.cpp
+	$(CPP) -c "C:/Users/pc/Downloads/(1) Matrix 作业 - 软工16级2班 程序设计（II）/2391 Simple Markup Language Parser/Provided Codes/State.cpp" -o "C:/Users/pc/Downloads/(1) Matrix 作业 - 软工16级2班 程序设计（II）/2391 Simple Markup Language Parser/Provided Codes/State.o" $(CXXFLAGS)
